@@ -1,0 +1,98 @@
+body {
+  background-color: #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+  margin: 0;
+}
+
+.timer-container {
+  text-align: center;
+  background: linear-gradient(145deg, #1e1e1e, #292929);
+  padding: 30px;  
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px #00ffcc;
+  transition: all 0.3s ease-in-out;
+  width: 350px;  
+  height: 250px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  font-size: 50px; 
+  color: #00ffcc;
+  text-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc; }
+  100% { text-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc; }
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+button {
+  font-size: 21px;  
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+}
+
+.start {
+  background-color: #00ffcc;
+  color: black;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+.start:hover {
+  background-color: #00cc99;
+}
+
+.pause {
+  background-color: #ffcc00;
+  color: black;
+  box-shadow: 0 0 15px #ffcc00;
+}
+
+.pause:hover {
+  background-color: #e6b800;
+}
+
+.reset {
+  background-color: #ff6666;
+  color: white;
+  box-shadow: 0 0 15px #ff6666;
+}
+
+.reset:hover {
+  background-color: #e60000;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+}
+
+.box{
+  border-radius: 5px;
+  background-color: #5bbdb0;
+  color: aliceblue;
+  padding: 3px;
+}
